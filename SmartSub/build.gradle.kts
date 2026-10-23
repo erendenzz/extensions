@@ -1,15 +1,9 @@
-plugins {
-    id("com.android.library")
-    id("kotlin-android")
-}
+version = 1
 
-android {
-    compileSdk = 34
-    defaultConfig {
-        minSdk = 21
-    }
-}
-
-dependencies {
-    compileOnly("com.lagradost:cloudstream3:pre-release")
+cloudstream {
+    description = "Subdl API tabanlı Forced ve tam senkron İngilizce altyazı eklentisi"
+    authors = listOf("erendenzz")
+    status = 1
+    tvTypes = listOf("Movie", "TvSeries")
+    language = "en"
 }
