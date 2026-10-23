@@ -34,14 +34,21 @@ jobs:
         run: |
           cd main
           chmod +x gradlew
-          ./gradlew make
-          cp -r build/. ../builds/
+          ./gradlew make makePluginsJson
+          
+          # Clean old files in builds directory keeping .git
+          find ../builds -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+          
+          # Copy outputs to builds root directory
+          cp SmartSub/build/*.cs3 ../builds/
+          cp build/plugins.json ../builds/
+          cp repo.json ../builds/
 
       - name: Push to builds
         run: |
           cd builds
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add -A
           git commit -m "Update builds [skip ci]" || exit 0
           git push origin builds
