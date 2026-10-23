@@ -6,6 +6,9 @@ on:
       - master
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -43,6 +46,9 @@ jobs:
           cp SmartSub/build/*.cs3 ../builds/
           cp build/plugins.json ../builds/
           cp repo.json ../builds/
+
+          echo "Files in builds root directory:"
+          ls -la ../builds
 
       - name: Push to builds
         run: |
