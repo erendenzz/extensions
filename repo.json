@@ -1,8 +1,8 @@
 {
-    "name": "Cloudstream providers repository",
-    "description": "Cloudstream extension Repository",
-    "manifestVersion": 1,
-    "pluginLists": [
-      "https://raw.githubusercontent.com/erendenzz/extensions/builds/plugins.json"
-    ]
+  "name": "SmartSub Repo",
+  "description": "SmartSub EN Subtitle Provider Repository",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/erendenzz/extensions/builds/plugins.json"
+  ]
 }
