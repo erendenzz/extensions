@@ -1,0 +1,22 @@
+[
+    {
+        "fileHash": "sha256-ebcaeae80d15688f562f06ff9929d28e4b2a5fc19d8d3a67455667b10755023b",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/erendenzz/extensions",
+        "fileSize": 10903,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "erendenzz"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "SmartSub",
+        "description": "Subdl API tabanl\u0131 Forced ve tam senkron \u0130ngilizce altyaz\u0131 eklentisi",
+        "url": "https://raw.githubusercontent.com/erendenzz/extensions/builds/SmartSub.cs3",
+        "name": "SmartSub"
+    }
+]
